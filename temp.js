@@ -74,3 +74,19 @@ var swiper = new Swiper(".mySwiper2", {
 document.getElementById("default").click();
 
 
+
+const showOnPx = 100;
+const backToTopButton = document.querySelector(".scrollUp");
+
+const scrollContainer = () => {
+  return document.documentElement || document.body;
+};
+
+document.addEventListener("scroll", () => {
+  if (scrollContainer().scrollTop > showOnPx) {
+    backToTopButton.classList.remove("hidden");
+  } else {
+    backToTopButton.classList.add("hidden");
+  }
+});
+
