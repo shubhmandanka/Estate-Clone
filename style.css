@@ -48,7 +48,7 @@ html {
     color: orangered;
 }
 
-. .logo ul li b {
+.logo ul li b {
     margin: 0px 10px;
 }
 
@@ -2019,4 +2019,7 @@ html {
     transition: all 0.3s ease-in-out;
  color: black;
  cursor: pointer;
+}
+.hidden{
+    display: none;
 }
