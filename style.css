@@ -175,7 +175,7 @@ html {
     flex-direction: column;
     /* overflow: hidden; */
     list-style-type: none;
-    width: 230px;
+    width: 200px;
 }
 
 .menu11 li {
@@ -232,6 +232,15 @@ html {
     font-size: 20px;
     color: orangered;
 }
+.intro1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.intro1 i {
+    font-size: 20px;
+    color: orangered;
+}
 
 .rea {
     font-size: 20px;
@@ -246,6 +255,13 @@ html {
     max-width: 500px;
     border-left: 1px solid black;
     padding: 10px;
+}
+.tg1{
+    margin-left: 200px;
+        border-right: 1px solid black;
+        padding: 10px;
+        text-align: end;
+
 }
 
 .enq {
@@ -283,7 +299,30 @@ html {
 .grid2 {
     margin-left: 30%;
 }
-
+.grid21{
+    margin-right: 30%;
+}
+.grid12111{
+    text-align: end;
+}
+.lm{
+    display: inline-block;
+        text-decoration: none;
+        color: black;
+        padding: 20px;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        border: none;
+        font-size: 20px;
+}
+.lm:hover{
+    transition: all 0.3s ease-in-out;
+        color: white;
+        cursor: pointer;
+        background-color: black;
+}
 /* --------------------------------------------------container3 ----------------------------------------------*/
 
 .main3 {
@@ -390,7 +429,7 @@ html {
     text-align: center;
 }
 
-.col1 span {
+.sp {
     font-size: 20px;
     font-weight: 600;
     color: #5C727D;
@@ -1481,14 +1520,25 @@ html {
         display: flex;
         flex-direction: column;
     }
+        .intro1 {
+            display: flex;
+            flex-direction: column-reverse;
+        }
 
     .grid1 {
         padding: 0px 10px;
     }
+    .grid21{
+        margin: 0px;
+    }
 
+        .tg1 {
+            margin: 0px;
+        }
     .rea b,
     .rea i,
-    .tg {
+    .tg,
+    .tg1 {
         font-size: 15px;
     }
 
@@ -1855,6 +1905,8 @@ html {
         max-width: 375px;
     }
 
+                
+
     .swiper.mySwiper2.swiper-cube.swiper-3d.swiper-initialized.swiper-horizontal.swiper-watch-progress {
         max-width: 375px;
     }
@@ -2022,4 +2074,13 @@ html {
 }
 .hidden{
     display: none;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 0px;
+    left: 0;
+    width: 100%;
 }
